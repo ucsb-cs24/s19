@@ -13,6 +13,7 @@ You must contact the instructor for clarification if you receive information fro
 
 * **Course Web Site**: <{{ site.url}}>
 * **Instructor**:  [Diba Mirza](http://www.cs.ucsb.edu/~dimirza)
+* **Instructor OH**: W 11am-noon, F noon - 1p, or by appointment (starting week 2)
 * **Lecture**: {{ site.lecture_times}}, {{ site.lecture_location}}
 * **TAs**: {{ site.tas}}
 * **Tutors**: {{site.tutors}}
