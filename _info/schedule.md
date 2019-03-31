@@ -7,7 +7,7 @@ layout: default
 
 # Professor Mirza's Office Hours
 
-* Wednesdays, 11a - 1p, Fridays: noon - 1p, or by appointment
+* Wednesdays, 11a - noon, Fridays: noon - 1p, or by appointment
 * Location: HFH 1155
 
 # Lab Hours
