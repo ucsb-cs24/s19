@@ -36,8 +36,8 @@ You must contact the instructor for clarification if you receive information fro
 ## Evaluation components
 
 * Homeworks: 10%
-* Lab assignments: 15%
-* Projects: 20%
+* Lab Assignments: 15%
+* Programming Assignments: 20%
 * Midterm Exams: 25%
 * Final Examination: 30%
 
