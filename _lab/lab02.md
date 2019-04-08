@@ -330,7 +330,7 @@ Do beware that all parts must be working to earn any points at all from the Grad
 
 ## Evaluation and Grading
 
-Each student must accomplish the following to earn full credit [50 total points] for this lab:
+Each student must accomplish the following to earn full credit for this lab:
 
 * [100 points] intlist.cpp is saved, it has your name(s) in a comment at the top, it compiles and executes properly, and has been submitted with a score of 100/100 to the Gradescope system.
 
