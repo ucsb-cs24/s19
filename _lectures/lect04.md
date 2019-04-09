@@ -1,10 +1,10 @@
 ---
 num: "lect04"
 desc: "Linked Lists, Operator overloading, Unit tests"
-ready: true
+ready: false
 pdfurl: /lectures/CS24_Lecture4.pdf
 annotatedpdfurl: /lectures/CS24_Lecture4_ann.pdf
-annotatedready: true
+annotatedready: false
 lecture_date: 2019-01-16
 ---
 
