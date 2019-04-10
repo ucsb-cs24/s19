@@ -32,7 +32,7 @@ By the time you have completed this lab, you should be able to
 * Now copy all of the files for this lab from the starter-code directory to your git directory:
 
 ```
-cp ~/cs24/cs24-w19-starter-code/{{page.num}}/* ./
+cp ~/cs24/cs24-s19-starter-code/{{page.num}}/* ./
 ```
 
 Verify you got all the files and try to compile them as follows:
