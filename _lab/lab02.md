@@ -4,7 +4,7 @@ num: lab02
 ready: true
 desc: "Implementing a linked list"
 assigned: 2019-04-09 15:00:00.00-8
-due: 2019-04-15 23:59:00.00-8
+due: 2019-04-18 23:59:00.00-8
 ---
 
 
