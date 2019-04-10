@@ -1,7 +1,7 @@
 ---
 num: "lect04"
 desc: "Linked Lists, Operator overloading, Unit tests"
-ready: false
+ready: true
 pdfurl: /lectures/CS24_Lecture4.pdf
 annotatedpdfurl: /lectures/CS24_Lecture4_ann.pdf
 annotatedready: false
@@ -22,6 +22,11 @@ lecture_date: 2019-01-16
 
 C++ provides a default constructor, destructor, copy constructor, copy assignment operator for any class that doesn't have one explicitly defined.
 
+## Unit testing
+
+* We'll go over some important [guidelines related to unit testing](https://petroware.no/unittesting.html)
+
+* I suggest also reading [this blog post](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/) about the best (and worst) practices for unittesting your code
 
 ## Makefiles and unit testing
 * We will split our implementation of linked list into three files  - header file (contains only the class definition), source file (contains the implementation of the class methods - no main), test file - uses the ADT. (More practice on this in lab02)
