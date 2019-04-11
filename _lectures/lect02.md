@@ -11,7 +11,7 @@ lecture_date: 2019-04-03
 
 # Code from lecture:
 
-[https://github.com/ucsb-cs24-s19-mirza/cs24-s19-lectures/tree/master/lec-02](https://github.com/ucsb-cs24-s19-mirza/cs24-s19-lectures/tree/master/lec-02)
+[{{site.lect_repo}}/tree/master/lec-02]({{site.lect_repo}}/tree/master/lec-02)
 
 # Topics
 

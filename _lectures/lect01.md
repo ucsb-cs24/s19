@@ -10,7 +10,7 @@ annotatedready: true
 
 # Code from lecture
 
-[https://github.com/ucsb-cs24-s19-mirza/cs24-s19-lectures/tree/master/lec-01](https://github.com/ucsb-cs24-s19-mirza/cs24-s19-lectures/tree/master/lec-01)
+[{{site.lect_repo}}/tree/master/lec-01]({{site.lect_repo}}/tree/master/lec-01)
 
 # Topics
 

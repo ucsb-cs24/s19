@@ -4,13 +4,13 @@ desc: "Linked Lists, Operator overloading, Unit tests"
 ready: true
 pdfurl: /lectures/CS24_Lecture4.pdf
 annotatedpdfurl: /lectures/CS24_Lecture4_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2019-01-16
 ---
 
 # Code from lecture
 
-[https://github.com/ucsb-cs24-w19-mirza/cs24-w19-lectures/tree/master/lec-04](https://github.com/ucsb-cs24-w19-mirza/cs24-w19-lectures/tree/master/lec-04)
+[{{site.lect_repo}}/tree/master/lec-04]({{site.lect_repo}}/tree/master/lec-04)
 
 # Topics
 
@@ -18,9 +18,6 @@ lecture_date: 2019-01-16
 
 * Linked lists as an ADT (implementation using classes)
 
-* Revisit the big four for linked list
-
-C++ provides a default constructor, destructor, copy constructor, copy assignment operator for any class that doesn't have one explicitly defined.
 
 ## Unit testing
 
