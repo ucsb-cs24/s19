@@ -45,7 +45,7 @@ cd ~/cs24/{{page.num}}
 Now copy all of the files for this lab from the starter-code directory to your cs24/{{page.num}} directory:
 
 ```
-cp ~/cs24/cs24-w19-starter-code/{{page.num}}/* ~/cs24/{{page.num}}/
+cp ~/cs24/cs24-s19-starter-code/{{page.num}}/* ~/cs24/{{page.num}}/
 ```
 
 ## Step 2: Review compiling and linking with g++
