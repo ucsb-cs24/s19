@@ -202,7 +202,7 @@ Empty BST:
 
 In a file named test_intbst.cpp, include code to test all the functions that you implemented in intbst.cpp. Make sure that this file is compilable.
 
-# Step 5: Submit your revised intbst.cpp, test_intbst.cpp and intbst.h
+# Step 6: Submit your revised intbst.cpp, test_intbst.cpp and intbst.h
 
 You are allowed to modify intbst.h, though you should not need to, so submit both intbst.cpp and intbst.h to Gradescope for a grade out of 95. The remaining 5 points will be awarded manually by a cs24 staff after checking the coverage of your testbench.
 
