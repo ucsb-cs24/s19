@@ -37,7 +37,7 @@ cd ~/cs24/{{page.num}}
 Now navigate to your starter-code directory and do a git pull to get the latest version of the code
 
 ```
-cd ~/cs24/cs24-w19-starter-code/
+cd ~/cs24/cs24-s19-starter-code/
 git pull
 cd ~/cs24/{{page.num}}
 ```
