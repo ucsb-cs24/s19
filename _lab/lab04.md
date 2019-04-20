@@ -36,13 +36,13 @@ Select a pilot, log into the CSIL machines.
 
 ```
 cd ~/cs24
-git clone git@github.com:ucsb-cs24-s18/lab04_jgaucho_alily.git
+git clone git@github.com:ucsb-cs24-s19/lab04_jgaucho_alily.git
 ```
 
 Now navigate to your starter-code directory (cloned in a previous lab) and do a git pull to get the latest version of the code
 
 ```
-cd ~/cs24/cs24-s18-starter-code/
+cd ~/cs24/cs24-s19-starter-code/
 git pull
 cd ~/cs24/lab04_jgauch_alily/
 ```
