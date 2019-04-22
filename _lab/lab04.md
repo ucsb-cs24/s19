@@ -36,13 +36,13 @@ Select a pilot, log into the CSIL machines.
 
 ```
 cd ~/cs24
-git clone git@github.com:ucsb-cs24-s18/lab04_jgaucho_alily.git
+git clone git@github.com:ucsb-cs24-s19/lab04_jgaucho_alily.git
 ```
 
 Now navigate to your starter-code directory (cloned in a previous lab) and do a git pull to get the latest version of the code
 
 ```
-cd ~/cs24/cs24-s18-starter-code/
+cd ~/cs24/cs24-s19-starter-code/
 git pull
 cd ~/cs24/lab04_jgauch_alily/
 ```
@@ -198,10 +198,13 @@ Empty BST:
   count: 0
   contains 16? N
 ```
+# Step 5: Create a testbench in a file test_intbst.cpp
 
-# Step 5: Submit your revised intbst.cpp and intbst.h
+In a file named test_intbst.cpp, include code to test all the functions that you implemented in intbst.cpp. Make sure that this file is compilable.
 
-You are allowed to modify intbst.h, though you should not need to, so submit both intbst.cpp and intbst.h to Gradescope for a grade out of 100.
+# Step 6: Submit your revised intbst.cpp, test_intbst.cpp and intbst.h
+
+You are allowed to modify intbst.h, though you should not need to, so submit both intbst.cpp and intbst.h to Gradescope for a grade out of 95. The remaining 5 points will be awarded manually by a cs24 staff after checking the coverage of your testbench.
 
 # Optional Extra Challenge
 

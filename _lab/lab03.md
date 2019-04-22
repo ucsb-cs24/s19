@@ -37,7 +37,7 @@ cd ~/cs24/{{page.num}}
 Now navigate to your starter-code directory and do a git pull to get the latest version of the code
 
 ```
-cd ~/cs24/cs24-w19-starter-code/
+cd ~/cs24/cs24-s19-starter-code/
 git pull
 cd ~/cs24/{{page.num}}
 ```
@@ -268,7 +268,7 @@ Reading symbols from ./buggy...done.
 Type "r" for "run", followed by the command line arguments CS16 A CS24 A+ 
 
 (gdb)r CS16 A CS24 A+ CS32 A
-Starting program: /cs/faculty/dimirza/git/cs24-s18-starter-code/lab02/buggy CS16 A CS24 A+ CS32 A
+Starting program: /cs/faculty/dimirza/git/cs24-s19-starter-code/lab02/buggy CS16 A CS24 A+ CS32 A
 This way the program will run until line 23. Normally, you might have put 
 a cout statement right before this line to examine the values of the arrays 
 and any other local variables. With gdb we can do this at the gdb command 
