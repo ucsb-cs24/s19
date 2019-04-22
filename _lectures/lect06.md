@@ -1,19 +1,37 @@
 ---
 num: "lect06"
-desc: "Rule of Three, Recursion (review), intro to pa02"
+desc: "Rule of Three, GDB, intro to pa01"
 ready: true
 pdfurl: /lectures/CS24_Lecture6.pdf
 annotatedpdfurl: /lectures/CS24_Lecture6_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2019-04-16
 ---
 
+# Code from lecture
+[{{site.lect_repo}}/tree/master/lec-05]({{site.lect_repo}}/tree/master/lec-06)
 
 # Topics
 
-* Fun with recursion: We will look at solving different problems with linked lists using recursion
+## gdb
 
-* Rule of three: In C++ there is a rule of thumb that states if any of the copy-constructor, copy assignment or destructor are overloaded, the others must be overloaded as well. We's like to understand the reasoning behind this rule of thumb. We looked at why and how we need to overload the destructor and the copy-constructor in the last class. We'll focus on the copy assignment operator in this class.
+* Demo of gdb commands 
+ - To use gdb, compile with the -g flag
+ - Setting breakpoints (b)
+ - Running programs that take arguments within gdb (r arguments)
+ - Continue execution until breakpoint is reached (c)
+ - Stepping into functions with step (s)
+ - Stepping over functions with next (n)
+ - Re-running a program (r)
+ - Examining local variables  (info locals)
+ - Printing the value of variables with print (p)
+ - Quitting gdb (q)
+ - Debugging segfaults with backtrace (bt)
+* Refer to the [gdb cheat sheet](http://darkdust.net/files/GDB%20Cheat%20Sheet.pdf) (handout given in class). More practice in lab 03.
+
+
+## Rule of three
+* In C++ there is a rule of thumb that states if any of the copy-constructor, copy assignment or destructor are overloaded, the others must be overloaded as well. We's like to understand the reasoning behind this rule of thumb. We looked at why and how we need to overload the destructor and the copy-constructor in the last class. We'll focus on the copy assignment operator in this class.
 
 The questions we ask are:
 1. What is the behavior of these defaults (taking linked lists as our running example)?
