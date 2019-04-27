@@ -10,7 +10,7 @@ lecture_date: 2019-04-29
 
 
 # Code from lecture
-[{{site.lect_repo}}/tree/master/lec-05]({{site.lect_repo}}/tree/master/lec-08)
+[{{site.lect_repo}}/tree/master/lec-08]({{site.lect_repo}}/tree/master/lec-08)
 
 # Topics
 * Binary trees
