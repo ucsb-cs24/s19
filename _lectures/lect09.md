@@ -1,10 +1,10 @@
 ---
 num: "lect09"
-desc: "Binary Search Trees (contd)"
+desc: "Binary Search Trees - Part 2"
 ready: true
 pdfurl: /lectures/CS24_Lecture9.pdf
 annotatedpdfurl: /lectures/CS24_Lecture9_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2019-05-01	
 ---
 
