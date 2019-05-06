@@ -4,7 +4,7 @@ desc: "Big-Oh: Analyzing the efficiency of algorithms"
 ready: true
 pdfurl: /lectures/CS24_Lecture10.pdf
 annotatedpdfurl: /lectures/CS24_Lecture10_ann.pdf
-annotatedready: false
+annotatedready: true
 lecture_date: 2019-05-06
 ---
 
