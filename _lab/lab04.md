@@ -210,7 +210,7 @@ You are allowed to modify intbst.h, though you should not need to, so submit bot
 
 AFTER you have completed the main lab, you may modify it for extra credit by converting your BST to a generic data structure. For convenience, we will not change any of the file or data structure names, but your structure should be useable as IntBST<T> where T is a type that can be compared with <, >, etc. This could include double, char, or any other basic type. There is a separate Gradescope submission portal for this extra credit assignment. Make sure to have a full-credit submission on the main assignment's Gradescope before working on this part.
 
-Note that you should implement a generic type in separate .template or .cpp file and include it in your header file as #include "intbst.template" or #include "intbst.cpp". You may alternatively move the implementation to your header file, although that is not recommended.
-Submit files: intbst.*
+Note that you should implement a generic type in intbst.cpp and include it in your header file as #include "intbst.cpp".
+Submit files: intbst.h and intbst.cpp
 
 </div>
