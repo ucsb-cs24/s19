@@ -9,7 +9,7 @@ lecture_date: 2019-05-06
 ---
 
 ## Code written in class
-[{{site.lect_repo}}/tree/master/lec-09]({{site.lect_repo}}/tree/master/lec-10)
+[{{site.lect_repo}}/tree/master/lec-10]({{site.lect_repo}}/tree/master/lec-10)
 
 # Topics
 
