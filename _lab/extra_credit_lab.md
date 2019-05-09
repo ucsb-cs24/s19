@@ -18,7 +18,7 @@ alone and submit it.
 
 * Clone your repo on CSIL in your home directory.
 
-* Get the starter code : If you have already cloned the `cs24-w19-starter-code`
+* Get the starter code : If you have already cloned the `cs24-s19-starter-code`
 change into it and type `git pull` to get the latest starter code.
 
 * Change into your repo directory and obtain copy the starter code by
