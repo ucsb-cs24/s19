@@ -17,11 +17,11 @@
 
 # Instructions
 
-In this assignment we have given you datasets containing movie names and their rating. Your goal is to implement a Binary Search Tree to store this information, measure and analyze the running time of searching for movies.
+In this assignment, we have given you datasets containing movie names and their ratings. Your goal is to implement a Binary Search Tree to store this information, measure and analyze the running time of searching for movies.
 
 An overview of your goals are provided below:
 * Implement a Binary Search Tree to store movie names and ratings.
-* Your BST should provide public function to search for a "particular" movie, search for movies that start with a specific prefix, and calculate the average rating of movies that start with a prefix.
+* Your BST should provide a public function to search for a particular movie, search for movies that start with a specific prefix, and find the movie with the highest rating starting with a particular prefix.
 * Measure the absolute running time of your search functions and how it scales with input size.
 * Analyze the Big-O running time for different types of search.
 * Write a report to discuss the trends in running times using your mathematical analysis to explain the performance data that you collected.
@@ -35,13 +35,14 @@ An overview of your goals are provided below:
 * Makefile // generate two executables- the first should be called ```movies``` and the second should be called ```tests```. The command ```make tests``` should RUN (not just compile) all the test code to unit test your classes and methods 
 
 ## Approach
-You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies respectively. The only difference between files in a pair is the way movies are ordered. In one case movies appear alphabetically in the file while in the other case they appear in random order.  As discussed in lecture, the order of inserting values into a BST affect its structure and hence the running time. Your goal is to investigate how the running time of search relates to the "depth" of a movie in the BST. The depth of a movie in the BST is the number of edges on the path from the root to the node containing the movie. For example, the root is at depth 0.
+You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies respectively. The only difference between files in a pair is the way movies are ordered. In one case movies appear alphabetically in the file while in the other case they appear in random order.  As discussed in the lecture, the order of inserting values into a BST affects its structure and hence the running time. Your goal is to investigate how the running time of search relates to the depth of a movie in the BST. The depth of a movie in the BST is the number of nodes on the path from the root to the node containing the movie. For example, the root will be at depth 0.
 
 
 
 The file will be of this format File1(input_1.csv) and File2(input_2.csv).
-You will then create your BST and insert the movies in the same order as that of the files. The node in BST will store information such as movie_name, rating, level. You will also be given two movie names for each pair that needs to be searched. You need to search for these two movies along with your "favorite" movie among the movies given in the input file but different from those provided by us. You also have to time your search (using time.h or other libraries) and then report them in a seperate file. So for each input file, you will record 3 searches and in total, you should have 18 records.  You will also implement an extra function that will compute the average of all movies that begin with a particular letter (passed as input). An example of execution is 
-`make && ./movies input_1.txt movie_a movie_b movie_c some_letter`
+You will then create your BST and insert the movies in the same order as that of the files. The node in BST will store information such as movie_name, rating, level. Sample execution of the program will be as follows:
+`make && ./movies arg1 arg2 arg3`. `arg1`  represents the flag which is a boolean variable i.e. can be true or false. `arg2` represents the input file which is to be inserted into the BST. `arg3` will either be a movie prefix if the flag is true or the name of the output file if the flag is false. 
+Once inserted, there are again two modes of operation. If true, you need to print the pre-order traversal of your tree which consists of node data i.e. movie name and level. Then you need to search for the movie with the highest rating beginning with the prefix that is passed as the 3rd argument. If the flag is false, you need to search for all the movies in the BST i.e. perform search on each movie present in the input file/BST. You also need to time your searches and store statistics such as minimum, maximum and median time taken to perform search across all movies. You also need to track the number of steps that occurred during the search. You can use the output file to store all the timing and steps taken for search operations.
 
 ## Requirements
 For this programming assignment, you will have a lot of flexibility on your implementation (which just means we won't be providing a code framework for you to fill in). However, there are a few requirements that you need to keep in mind as you think about your solution:
@@ -52,6 +53,11 @@ For this programming assignment, you will have a lot of flexibility on your impl
 * Your code should be readable
 * Your classes should define clear interfaces and hide implementation details as much as possible. 
 * Your program must properly free all memory it allocates, including your binary tree nodes and any dynamically allocated data stored inside them. We will also check this with valgrind when you turn in your code to Gradescope.
+
+## Report
+Here is the sample sheet[https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing] to create graphs and document[https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing] format expected for the report.
+First, you need to collect the minimum, maximum and median time taken for search for each input file. You need to run your executable for each input file for 10 times and then calculate the average time taken for each input file. Meaning, you need to call `./movies false input_1.csv output_1.txt` 10 times and then find average timings for input_1.csv. Then you need to do the same for the rest of the 5 input files.
+You also need to calculate the total number of steps taken for each search for 1000_ordered and 1000_random files and plot them in the graph as shown in the link above.
 
 # Submission instructions 
 
