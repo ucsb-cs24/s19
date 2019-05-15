@@ -39,7 +39,7 @@ You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies 
 
 
 
-The file will be of this format File1(input_1.csv) and File2(input_2.csv).
+The file will be of this format [File1](input_20_ordered.csv) and [File2](input_20_random.csv).
 You will then create your BST and insert the movies in the same order as that of the files. The node in BST will store information such as movie_name, rating, level. Sample execution of the program will be as follows:
 `make && ./movies arg1 arg2 arg3`. `arg1`  represents the flag which is a boolean variable i.e. can be true or false. `arg2` represents the input file which is to be inserted into the BST. `arg3` will either be a movie prefix if the flag is true or the name of the output file if the flag is false. 
 Once inserted, there are again two modes of operation. If true, you need to print the pre-order traversal of your tree which consists of node data i.e. movie name and level. Then you need to search for the movie with the highest rating beginning with the prefix that is passed as the 3rd argument. If the flag is false, you need to search for all the movies in the BST i.e. perform search on each movie present in the input file/BST. You also need to time your searches and store statistics such as minimum, maximum and median time taken to perform search across all movies. You also need to track the number of steps that occurred during the search. You can use the output file to store all the timing and steps taken for search operations.
@@ -55,7 +55,7 @@ For this programming assignment, you will have a lot of flexibility on your impl
 * Your program must properly free all memory it allocates, including your binary tree nodes and any dynamically allocated data stored inside them. We will also check this with valgrind when you turn in your code to Gradescope.
 
 ## Report
-Here is the sample sheet[https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing] to create graphs and document[https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing] format expected for the report.
+Here is the sample [sheet](https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing) to create graphs and [document](https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing) format expected for the report.
 First, you need to collect the minimum, maximum and median time taken for search for each input file. You need to run your executable for each input file for 10 times and then calculate the average time taken for each input file. Meaning, you need to call `./movies false input_1.csv output_1.txt` 10 times and then find average timings for input_1.csv. Then you need to do the same for the rest of the 5 input files.
 You also need to calculate the total number of steps taken for each search for 1000_ordered and 1000_random files and plot them in the graph as shown in the link above.
 
