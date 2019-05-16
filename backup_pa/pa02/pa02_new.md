@@ -41,8 +41,14 @@ You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies 
 
 The file will be of this format [File1](input_20_ordered.csv) and [File2](input_20_random.csv).
 You will then create your BST and insert the movies in the same order as that of the files. The node in BST will store information such as movie_name, rating, level. Sample execution of the program will be as follows:
-`make && ./movies arg1 arg2 arg3`. `arg1`  represents the flag which is a boolean variable i.e. can be true or false. `arg2` represents the input file which is to be inserted into the BST. `arg3` will either be a movie prefix if the flag is true or the name of the output file if the flag is false. 
+`./movies arg1 arg2 arg3`. `arg1`  represents the flag which is a boolean variable i.e. can be `true` or `false`. `arg2` represents the input file which is to be inserted into the BST. `arg3` will either be a movie prefix if the flag is true or the name of the output file if the flag is false. 
 Once inserted, there are again two modes of operation. If true, you need to print the pre-order traversal of your tree which consists of node data i.e. movie name and level. Then you need to search for the movie with the highest rating beginning with the prefix that is passed as the 3rd argument. If the flag is false, you need to search for all the movies in the BST i.e. perform search on each movie present in the input file/BST. You also need to time your searches and store statistics such as minimum, maximum and median time taken to perform search across all movies. You also need to track the number of steps that occurred during the search. You can use the output file to store all the timing and steps taken for search operations.
+Here is an exmaple of execution:
+`./movies true input_20_ordered.csv harry`
+Here, the  flag is `true`, input file is `input_20_ordered.csv` and `harry` is the prefix. Now, the program should insert all the movies in input_20_ordered.csv, then print the pre ordered traversal and also the movie name with highest rating which has harry as its prefix. And
+`./movies false input_20_ordered.csv output.txt`
+Here, the flag is `false`, input file is `input_20_ordered.csv` and ouptut file is `output.txt`. Now, the program should insert all the movies in input_20_ordered.csv, then calcualte the time and steps done for the search for each movie. You can store the information in the output file in the format you desire. You will be using this for your report.
+
 
 ## Requirements
 For this programming assignment, you will have a lot of flexibility on your implementation (which just means we won't be providing a code framework for you to fill in). However, there are a few requirements that you need to keep in mind as you think about your solution:
