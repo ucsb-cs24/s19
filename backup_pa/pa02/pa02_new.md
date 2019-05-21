@@ -28,27 +28,88 @@ An overview of your goals are provided below:
  
 ## Required Files
 
-* movies.cpp, movies.h    // These files should contain your implementation of the binary search tree to store movies information
-* utility.cpp, utility.h // These files should contain any other classes that you need to implement your game,
-* tests.cpp, tests.h // These files should contain test code for all the classes and methods you used in your game
-* main.cpp // This file should read in the movies from input files and create BST along with functionality to time the searches / other functions.
-* Makefile // generate two executables- the first should be called ```movies``` and the second should be called ```tests```. The command ```make tests``` should RUN (not just compile) all the test code to unit test your classes and methods 
+* ```movies.cpp, movies.h```    // These files should contain your implementation of the binary search tree to store movies information
+* ```utility.cpp, utility.h``` // These files should contain any other classes that you need to implement your game,
+* ```tests.cpp, tests.h``` // These files should contain test code for all the classes and methods you used in your game
+* ```main.cpp``` // This file should read in the movies from input files and create BST along with functionality to time the searches / other functions.
+* ```Makefile``` // generate two executables- the first should be called ```movies``` and the second should be called ```tests```. The command ```make tests``` should RUN (not just compile) all the test code to unit test your classes and methods 
+
+## Starter Code
+As in previous assignments the starter code is available in the repo: [https://github.com/ucsb-cs24-s19-mirza/cs24-s19-starter-code](https://github.com/ucsb-cs24-s19-mirza/cs24-s19-starter-code)
+The starter code has the following files
+* ```main.cpp``` // Skeleton code to read in movies from input files
+* ```input_20_ordered.csv```
+* ```input_20_random.csv```
+* ```input_100_ordered.csv```
+* ```input_100_random.csv```
+* ```input_1000_ordered.csv```
+* ```input_1000_random.csv``` 
+
+You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies respectively. The only difference between files in a pair is the way movies are ordered. In one case movies appear alphabetically in the file while in the other case they appear in random order. The files are of format [File1](input_20_ordered.csv) and [File2](input_20_random.csv).
 
 ## Approach
-You are given 3 pairs of input files, each pair contains 20,100 and 1000 movies respectively. The only difference between files in a pair is the way movies are ordered. In one case movies appear alphabetically in the file while in the other case they appear in random order.  As discussed in the lecture, the order of inserting values into a BST affects its structure and hence the running time. Your goal is to investigate how the running time of search relates to the depth of a movie in the BST. The depth of a movie in the BST is the number of nodes on the path from the root to the node containing the movie. For example, the root will be at depth 0.
+As discussed in the lecture, the order of inserting values into a BST affects its structure and hence the running time. Your goal is to investigate how the running time of search relates to the depth of a movie in the BST. The depth of a movie in the BST is the number of nodes on the path from the root to the node containing the movie. For example, the root will be at depth 0.
 
+In this assignment, we ask that you implement your own BST class. One of the variations to your BST compared to an earlier lab is that each node in your BST should store information such as movie_name, rating, depth. Your main program should expect three arguments from the user. A sample execution of the program will be as follows:
 
+`./movies arg1 arg2 arg3`
 
-The file will be of this format [File1](input_20_ordered.csv) and [File2](input_20_random.csv).
-You will then create your BST and insert the movies in the same order as that of the files. The node in BST will store information such as movie_name, rating, level. Sample execution of the program will be as follows:
-`./movies arg1 arg2 arg3`. `arg1`  represents the flag which is a boolean variable i.e. can be `true` or `false`. `arg2` represents the input file which is to be inserted into the BST. `arg3` will either be a movie prefix if the flag is true or the name of the output file if the flag is false. 
-Once inserted, there are again two modes of operation. If true, you need to print the pre-order traversal of your tree which consists of node data i.e. movie name and level. Then you need to search for the movie with the highest rating beginning with the prefix that is passed as the 3rd argument. If the flag is false, you need to search for all the movies in the BST i.e. perform search on each movie present in the input file/BST. You also need to time your searches and store statistics such as minimum, maximum and median time taken to perform search across all movies. You also need to track the number of steps that occurred during the search. You can use the output file to store all the timing and steps taken for search operations.
-Here is an exmaple of execution:
-`./movies true input_20_ordered.csv harry`
-Here, the  flag is `true`, input file is `input_20_ordered.csv` and `harry` is the prefix. Now, the program should insert all the movies in input_20_ordered.csv, then print the pre ordered traversal and also the movie name with highest rating which has harry as its prefix. And
-`./movies false input_20_ordered.csv output.txt`
-Here, the flag is `false`, input file is `input_20_ordered.csv` and ouptut file is `output.txt`. Now, the program should insert all the movies in input_20_ordered.csv, then calcualte the time and steps done for the search for each movie. You can store the information in the output file in the format you desire. You will be using this for your report.
+`arg1`  is a boolean flag, which can be `true` or `false`
+`arg2` represents the input file containing movies and ratings (as described before)
+`arg3` is either the starting letters of a movie name (movie prefix) or a number
 
+You should use the value of the flag(`arg1`) to interpret the third argument and produce one of two possible outputs:
+
+** Case 1: `arg1` is `true`**
+In this case, you should expect the third argument to be a movie prefix. In main insert the movies in the same order as they appear in the input file into a BST, using the public functions of your class. Print the pre-order traversal of your tree to stdout, for each node visited, output the movie name, rating and depth. Using the public functions of BST, find the movie with the highest rating beginning with the prefix was passed in as the third argument.
+
+Below is a sample run of the program with `arg1` as `true`
+```
+./movies true input_20_random.csv the
+```
+This should produce the following output:
+```
+toy story, 7.7, 0
+jumanji, 6.9, 1
+grumpier old men, 6.5, 2
+father of the bride part ii, 5.7, 3
+dracula: dead and loving it, 5.7, 4
+balto, 7.1, 5
+ace ventura: when nature calls, 6.1, 6
+cutthroat island, 5.7, 6
+casino, 7.8, 7
+goldeneye, 6.6, 4
+four rooms, 6.5, 5
+heat, 7.7, 3
+sabrina, 6.2, 2
+nixon, 7.1, 3
+money train, 5.4, 4
+tom and huck, 5.4, 3
+sudden death, 5.5, 4
+sense and sensibility, 7.2, 5
+the american president, 6.5, 5
+waiting to exhale, 6.1, 1
+
+Best movie is the american president with rating 6.5
+```
+
+** Case 2: `arg1` is `false`**
+In this case, your goal is to: 
+(1) Collect statistics about the **average time to search in a BST**  
+(2) Collect data about**the number of primitive operations to search in a BST** and how it varies with the depth of a node. 
+
+Note that these are two different types of data. The first is absolute time, while the second is a count. 
+
+For (1), calculate the average time to search as the total time it takes to search for all the keys in your BST divided by the number of nodes in the BST. To get a more reliable value, don’t time each search. If your BST has N keys, record the time it takes to perform all N searches and then divide that value by N. You should expect this average time to have some random variation, which is why we ask that you compute it over multiple (W) runs and report the min, max and median statistics. The value of W is the third argument to your program. We recommend that you use a W value of 10 in all cases, but your program should work for any W.
+
+For (2), Write code in your BST implementation that tracks the number of steps that occurred during the search operation. In this case you must search for all the keys in your BST, and record how the number of primitive steps varies with the depth of the nodes.  You can choose to store the data in an output file as two columns: depth and number of steps to search
+Note that in this case, there is no randomness and you don't need to calculate averages. Collect this data for input files: 1000_ordered and 1000_random. Plot your data for both cases showing a scatter plot of the number of operations vs. depth. 
+Here is a [sample sheet](https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing) to create the graph.
+
+Write a **report** to present the data and explain the trends for the data collected for (1) and (2).
+Here is a [sample report](https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing) format expected for the report.
+
+Case 2 will be manually graded. The autograder will just checj that your program compiles and runs without crashing for this case.
 
 ## Requirements
 For this programming assignment, you will have a lot of flexibility on your implementation (which just means we won't be providing a code framework for you to fill in). However, there are a few requirements that you need to keep in mind as you think about your solution:
@@ -60,10 +121,7 @@ For this programming assignment, you will have a lot of flexibility on your impl
 * Your classes should define clear interfaces and hide implementation details as much as possible. 
 * Your program must properly free all memory it allocates, including your binary tree nodes and any dynamically allocated data stored inside them. We will also check this with valgrind when you turn in your code to Gradescope.
 
-## Report
-Here is the sample [sheet](https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing) to create graphs and [document](https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing) format expected for the report.
-First, you need to collect the minimum, maximum and median time taken for search for each input file. You need to run your executable for each input file for 10 times and then calculate the average time taken for each input file. Meaning, you need to call `./movies false input_1.csv output_1.txt` 10 times and then find average timings for input_1.csv. Then you need to do the same for the rest of the 5 input files.
-You also need to calculate the total number of steps taken for each search for 1000_ordered and 1000_random files and plot them in the graph as shown in the link above.
+
 
 # Submission instructions 
 
