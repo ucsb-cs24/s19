@@ -50,14 +50,17 @@ author.
 4. Write a `Makefile` to compile your code with both the test files. 
 
 5. Implement the constructor, all the member functions, and all three
-   non-member functions. Not that a subset of the non-member functions should be
-   declared as friend functions. Read the documentation for each of these
+   non-member functions. Note that a subset of the non-member functions should be
+   declared as friend functions (friend function grant you access to statisticians' private fields, 
+   and you won't have to define additional getters and setters). Read the documentation for each of these
    functions at the top of `stats.h`, and make sure your implementations
    work as advertised in those comments - i.e., satisfy all of the
    postconditions.
+   
+6. Write your own unit tests for all of public functions and operators in a file `unittests.cpp`. Your unit tests must adequately test your implementation and follow the structure described in lecture 4.
 
 
-6. Submit the files for {{page.num}} on gradescope: `stats.h`, `stats.cpp`, `stattest.cpp`
+7. Submit the files for {{page.num}} on gradescope: `stats.h`, `stats.cpp`, `stattest.cpp`, `unittests.cpp`, 
    `Makefile`. Be sure to wait for the results of all tests. If you
    score 80/80, and you've followed all of the other rules, then
    you'll earn 80/80. The additional 20 points will be manually graded for writing appropriate test code, and Makefile, and good coding style.
