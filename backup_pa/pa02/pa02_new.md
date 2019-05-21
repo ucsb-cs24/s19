@@ -96,7 +96,7 @@ waiting to exhale, 6.1, 1
 Best movie is the american president with rating 6.5
 ```
 
-## Case 2: 
+## Case 2: Analyze the time to search for keys in a BST and write a report
 If `arg1` is `false`, your goal is to collect two types of timing data to answer the following questions: 
 (1) What are the statistics of the **average time to search in a BST**?  
 (2) How does **the number of primitive operations to search in a BST** vary with the depth of a node? 
