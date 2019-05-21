@@ -63,7 +63,7 @@ You should use the value of the flag(`arg1`) to interpret the third argument and
 ## Case 1: Find the highest rated movie that starts with a given prefix
 If `arg1` is `true`, you should expect the third argument to be a movie prefix. In this case, 
 * In your main program insert the movies in the same order as they appear in the input file into a BST, using the public functions of your class. 
-* Print the pre-order traversal of your tree to stdout, for each node visited, output the movie name, rating and depth. 
+* Print the pre-order traversal of your tree to stdout, for each node visited, output the movie name, rating, and depth. 
 * Find the movie with the highest rating beginning with the prefix was passed in as the third argument, using the public functions of your BST.
 
 Below is a sample run of the program with `arg1` as `true`
@@ -101,7 +101,7 @@ If `arg1` is `false`, your goal is to collect two types of timing data to answer
 (1) What are the statistics of the **average time to search in a BST**?  
 (2) How does **the number of primitive operations to search in a BST** vary with the depth of a node? 
 
-Note that you need to collect two different types of data to answer these questions. The first is absolute time, while the second is a count. 
+Note that you need to collect two different types of data to answer these questions. The first is an absolute time, while the second is a count. 
 
 To answer (1), calculate the average time to search for any key. You can calculate this as the total time it takes to search for all the keys in your BST divided by the number of nodes in the BST. To get a more reliable value, don’t time each search. If your BST has N keys, record the time it takes to perform all N searches and then divide that value by N. You should expect this average time to have some random variation, which is why we ask that you compute it over multiple (W) runs and report the min, max and median statistics. The value of W is the third argument to your program. We recommend that you use a W value of 10 in all cases, but your program should work for any W.
 
@@ -111,7 +111,7 @@ Here is a [sample sheet](https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQl
 Write a **report** to present the data and explain the trends for the data collected for (1) and (2).
 Here is a [sample report](https://docs.google.com/document/d/1XHuhM1U0ItWX1GRv--A1Th-qtrjfEoGjqdfXjXkJAAw/edit?usp=sharing) format expected for the report.
 
-Case 2 will be manually graded. The autograder will just checj that your program compiles and runs without crashing for this case.
+Case 2 will be manually graded. The autograder will just check that your program compiles and runs without crashing for this case.
 
 ## Requirements
 For this programming assignment, you will have a lot of flexibility on your implementation (which just means we won't be providing a code framework for you to fill in). However, there are a few requirements that you need to keep in mind as you think about your solution:
@@ -128,4 +128,4 @@ For this programming assignment, you will have a lot of flexibility on your impl
 # Submission instructions 
 
 Submit your code on Gradescope. You must organize your program in the files: `main.cpp`, `movies.cpp`, `tests.cpp`, `movies.h`,`tests.h`, `utility.cpp` and `utility.h` Also, you must create a `Makefile` that compiles your program to an executable called `movies` and `tests`.
-In addition, you have to submit a report on Gradescope as a pdf file.  
+In addition, you have to submit a report as a pdf file on Gradescope, the assignment is called pa02-report.
