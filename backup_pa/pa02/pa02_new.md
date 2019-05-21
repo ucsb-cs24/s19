@@ -58,10 +58,13 @@ In this assignment, we ask that you implement your own BST class. One of the var
 `arg2` represents the input file containing movies and ratings (as described before)
 `arg3` is either the starting letters of a movie name (movie prefix) or a number
 
-You should use the value of the flag(`arg1`) to interpret the third argument and produce one of two possible outputs:
+You should use the value of the flag(`arg1`) to interpret the third argument and accordingly do one of two things:
 
-** Case 1: `arg1` is `true`**
-In this case, you should expect the third argument to be a movie prefix. In main insert the movies in the same order as they appear in the input file into a BST, using the public functions of your class. Print the pre-order traversal of your tree to stdout, for each node visited, output the movie name, rating and depth. Using the public functions of BST, find the movie with the highest rating beginning with the prefix was passed in as the third argument.
+## Case 1: Find the highest rated movie that starts with a given prefix
+If `arg1` is `true`, you should expect the third argument to be a movie prefix. In this case, 
+* In your main program insert the movies in the same order as they appear in the input file into a BST, using the public functions of your class. 
+* Print the pre-order traversal of your tree to stdout, for each node visited, output the movie name, rating and depth. 
+* Find the movie with the highest rating beginning with the prefix was passed in as the third argument, using the public functions of your BST.
 
 Below is a sample run of the program with `arg1` as `true`
 ```
@@ -93,17 +96,16 @@ waiting to exhale, 6.1, 1
 Best movie is the american president with rating 6.5
 ```
 
-** Case 2: `arg1` is `false`**
-In this case, your goal is to: 
-(1) Collect statistics about the **average time to search in a BST**  
-(2) Collect data about**the number of primitive operations to search in a BST** and how it varies with the depth of a node. 
+## Case 2: 
+If `arg1` is `false`, your goal is to collect two types of timing data to answer the following questions: 
+(1) What are the statistics of the **average time to search in a BST**?  
+(2) How does **the number of primitive operations to search in a BST** vary with the depth of a node? 
 
-Note that these are two different types of data. The first is absolute time, while the second is a count. 
+Note that you need to collect two different types of data to answer these questions. The first is absolute time, while the second is a count. 
 
-For (1), calculate the average time to search as the total time it takes to search for all the keys in your BST divided by the number of nodes in the BST. To get a more reliable value, don’t time each search. If your BST has N keys, record the time it takes to perform all N searches and then divide that value by N. You should expect this average time to have some random variation, which is why we ask that you compute it over multiple (W) runs and report the min, max and median statistics. The value of W is the third argument to your program. We recommend that you use a W value of 10 in all cases, but your program should work for any W.
+To answer (1), calculate the average time to search for any key. You can calculate this as the total time it takes to search for all the keys in your BST divided by the number of nodes in the BST. To get a more reliable value, don’t time each search. If your BST has N keys, record the time it takes to perform all N searches and then divide that value by N. You should expect this average time to have some random variation, which is why we ask that you compute it over multiple (W) runs and report the min, max and median statistics. The value of W is the third argument to your program. We recommend that you use a W value of 10 in all cases, but your program should work for any W.
 
-For (2), Write code in your BST implementation that tracks the number of steps that occurred during the search operation. In this case you must search for all the keys in your BST, and record how the number of primitive steps varies with the depth of the nodes.  You can choose to store the data in an output file as two columns: depth and number of steps to search
-Note that in this case, there is no randomness and you don't need to calculate averages. Collect this data for input files: 1000_ordered and 1000_random. Plot your data for both cases showing a scatter plot of the number of operations vs. depth. 
+To answer (2), write code in your BST implementation that tracks the number of steps that occurred during the search operation. Search for all the keys in your BST, and record how the number of primitive steps varies with the depth of the node that stores that key.  You can choose to store the data in an output file in two columns: **depth** and **number of steps to search**. Note that in this case, there is no randomness and you don't need to calculate averages. Collect this data for input files: ```input_1000_ordered``` and ```input_1000_random```. Plot your data for both cases showing a scatter plot of the number of operations vs. depth. 
 Here is a [sample sheet](https://docs.google.com/spreadsheets/d/1E85wYZuRcF60yQlmdd72TdSxLqhi7c6WJYAO1tt-qTM/edit?usp=sharing) to create the graph.
 
 Write a **report** to present the data and explain the trends for the data collected for (1) and (2).
@@ -126,4 +128,4 @@ For this programming assignment, you will have a lot of flexibility on your impl
 # Submission instructions 
 
 Submit your code on Gradescope. You must organize your program in the files: `main.cpp`, `movies.cpp`, `tests.cpp`, `movies.h`,`tests.h`, `utility.cpp` and `utility.h` Also, you must create a `Makefile` that compiles your program to an executable called `movies` and `tests`.
-In addition, you have to submit a report on Gradescope containing your time values searches. 
+In addition, you have to submit a report on Gradescope as a pdf file.  
