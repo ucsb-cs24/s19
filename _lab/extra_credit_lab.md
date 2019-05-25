@@ -39,8 +39,8 @@ author.
 
 1. Type your name and the date in a comment at the top.(Like always, whether or not we remind you!)
 
-2. Write test code in the file: `stattest.cpp`
-   This code should test each of the public interfaces and non member functions of your class.
+2. Write unit tests in the file: `unittests.cpp`
+   This code should test each of the public interfaces and non member functions of your class and follow the structure described in lecture 4. 
 
 3. Complete the incomplete definition of class statistician as
    provided in `stats.h` header file. In particular you must reason
@@ -56,11 +56,8 @@ author.
    functions at the top of `stats.h`, and make sure your implementations
    work as advertised in those comments - i.e., satisfy all of the
    postconditions.
-   
-6. Write your own unit tests for all of public functions and operators in a file `unittests.cpp`. Your unit tests must adequately test your implementation and follow the structure described in lecture 4.
 
-
-7. Submit the files for {{page.num}} on gradescope: `stats.h`, `stats.cpp`, `stattest.cpp`, `unittests.cpp`, 
+6. Submit the files for {{page.num}} on gradescope: `stats.h`, `stats.cpp`, `stattest.cpp`, `unittests.cpp`, 
    `Makefile`. Be sure to wait for the results of all tests. If you
    score 80/80, and you've followed all of the other rules, then
    you'll earn 80/80. The additional 20 points will be manually graded for writing appropriate test code, and Makefile, and good coding style.
