@@ -30,6 +30,7 @@ Here is the link to the survey:
 
 To get credit show a screenshot of the final page of the completed survey on gradescope (lab06) to your TA. They will record your grade manually.
 
+For more imformation, you can look at the lecture slides for heap and its implementation - [heap] (https://ucsb-cs24.github.io/w19/lectures/CS24_Lecture13.pdf) [heap implementation] (https://ucsb-cs24.github.io/w19/lectures/CS24_Lecture14.pdf)
 
 ## Step 1: Create a lab06 git repo and get the starter code
 
