@@ -1,9 +1,9 @@
 ---
 layout: lab
 num: lab06
-ready: false
+ready: true
 desc: "Implementing a heap"
-assigned: 2019-05-28 09:00:00.00-8
+assigned: 2019-05-28 13:00:00.00-8
 due: 2019-06-03 23:59:00.00-7
 ---
 
@@ -30,6 +30,7 @@ Here is the link to the survey:
 
 To get credit show a screenshot of the final page of the completed survey on gradescope (lab06) to your TA. They will record your grade manually.
 
+For more imformation, you can look at the lecture slides for heap and its implementation - [heap](https://ucsb-cs24.github.io/w19/lectures/CS24_Lecture13.pdf) and [heap implementation](https://ucsb-cs24.github.io/w19/lectures/CS24_Lecture14.pdf)
 
 ## Step 1: Create a lab06 git repo and get the starter code
 
