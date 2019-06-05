@@ -1,6 +1,6 @@
 ---
 num: "lect15"
-desc: "Comparasion classes and iterators"
+desc: "Comparison classes and iterators"
 ready: true
 pdfurl: /lectures/CS24_Lecture15.pdf
 annotatedpdfurl: /lectures/CS24_Lecture15_ann.pdf
